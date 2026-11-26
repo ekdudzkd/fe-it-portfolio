@@ -599,13 +599,13 @@
   <div class="rtitle">
     <div class="kicker">동글서울 · 3D 월드</div>
     <h3>OpenStreetMap 데이터를 활용한 실제 서울 도로망 구축</h3>
-    <p>손으로 그린 길은 실제 서울과 달라 랜드마크와 레이스 코스가 어긋났습니다.<br>실제 도로 데이터로 도로망을 만드는 과정을 스크립트로 묶어, 지도가 바뀌어도 다시 실행하면 되게 했습니다.</p>
+    <p>랜드마크를 최소 신장 트리로 잇고 A*로 깐 자동 생성 도로는 실제 서울과 모양이 달라, 길과 레이스 코스가 어긋났습니다.<br>실제 서울 도로망의 구조는 살리되 게임에 맞게 단순화하고, 그 과정을 스크립트로 묶어 지도가 바뀌어도 다시 실행하면 되게 했습니다.</p>
   </div>
   <div class="flow" style="margin-top:34px"><div class="fbox"><div class="k">01</div><h5>OSM 원본</h5><p>서울 도로, 한강 다리, 2호선 노선을 OpenStreetMap에서 받기</p></div><div class="arrow">→</div><div class="fbox"><div class="k">02</div><h5>원본 정리</h5><p>받아 온 노선을 동글서울 좌표로 옮기는 스크립트</p></div><div class="arrow">→</div><div class="fbox"><div class="k">03</div><h5>섬에 맞춰 변환</h5><p>섬 모양대로 자르기, 차선, 철도 교차, 끊긴 길 잇기</p></div><div class="arrow">→</div><div class="fbox"><div class="k">04</div><h5>roads.json</h5><p>노선 65개를 데이터 한 파일로 저장</p></div><div class="arrow">→</div><div class="fbox"><div class="k">05</div><h5>3D 생성</h5><p>차도, 차선, 교차로, 정지선, 다리를 화면에 그리기</p></div></div>
   <div class="cmp">
-    <div><img src="assets/dongle-seoul-roads-before.png" alt="전: 손으로 그린 길 지도"><p><b>전</b> 손으로 그린 길</p></div>
+    <div><img src="assets/dongle-seoul-roads-before.png" alt="전: 자동 생성 도로 지도"><p><b>전</b> 랜드마크를 잇는 자동 생성 도로 (최소 신장 트리 + A*)</p></div>
     <div class="arrow">→</div>
-    <div><img src="assets/dongle-seoul-roads-after.png" alt="후: 실제 서울 도로망 지도"><p><b>후</b> 실제 서울 도로망 (겹친 조각, 다리 끝 끊김, 막다른 길까지 8단계로 정리)</p></div>
+    <div><img src="assets/dongle-seoul-roads-after.png" alt="후: 실제 서울 도로망 지도"><p><b>후</b> 실제 서울 도로망을 게임에 맞게 단순화 (겹친 조각, 다리 끝 끊김, 막다른 길까지 정리)</p></div>
   </div>
   <div class="page">09</div>
 </section>
