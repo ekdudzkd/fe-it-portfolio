@@ -728,15 +728,15 @@
       <div class="role">
         <h4>담당 역할</h4>
         <ul class="dot">
-          <li>프론트엔드 · UI/UX 디자인</li>
-          <li>구매자 홈 · 목록 · 상세 · 주문, <b>판매자센터</b>(전환 · 공동구매 관리 · 정산) 화면 구현</li>
-          <li><b>디자인 시스템</b>(공용 스타일 · 버튼 · 빈 화면 패턴)을 만들어 전 화면에 적용</li>
-          <li><b>로그인 유지</b>(만료된 토큰 자동 재발급), 인앱 알림, 에스크로 · 코인 결제 상태 화면 처리</li>
-          <li>서버 응답을 스키마로 검증, <b>모르는 상태값 하나로 화면이 죽지 않게</b> 방어</li>
+          <li>프론트엔드, UI/UX 디자인</li>
+          <li>구매자 홈, 목록, 상세, 주문 화면</li>
+          <li><b>판매자센터</b> 판매자 전환, 공동구매 관리, 정산 화면</li>
+          <li><b>디자인 시스템</b> 공용 스타일, 버튼, 빈 화면 패턴</li>
+          <li><b>로그인 유지</b> 토큰 자동 재발급</li>
+          <li>인앱 알림, 에스크로와 코인 결제 상태 화면</li>
+          <li>서버 응답 스키마 검증, <b>예상 못 한 값에도 화면 멈춤 방지</b></li>
         </ul>
       </div>
-      <div class="card" style="margin-top:24px;padding:20px"><h5 style="font-size:17px;margin-bottom:6px">협업에서 맞춘 것</h5>
-        <p style="font-size:15px">"판매자 전환"을 나는 쇼핑 중 전환으로, 백엔드는 첫 화면 역할 선택으로 이해해 ERD가 달랐습니다.<br><b>프로토타입으로 흐름을 보여 주고 ERD를 함께 조정</b>했습니다.</p></div>
       <div class="foot meta">2026.08.18 – 09.28&emsp;SSAFY 특화 프로젝트</div>
     </div>
     <div style="display:flex;align-items:center;height:756px">
@@ -824,17 +824,15 @@
       <div class="role">
         <h4>담당 역할</h4>
         <ul class="dot">
-          <li>프론트엔드 · UI/UX 디자인</li>
-          <li>프론트 초기 구조와 Android 실행 환경, <b>역할별 앱 셸 · 그룹 전환</b></li>
-          <li>가족 피드 · 게시글 · 댓글, 알림, 그룹 관리 · 가입 승인, 마이페이지, 통화 리포트</li>
-          <li>팝업 · 뒤로가기 · 재시도 버튼 <b>공용 컴포넌트</b></li>
-          <li>알림 프로필 사진 표시, 사진이 없으면 <b>알림 종류 아이콘</b></li>
-          <li>AI 전화 화면 4개 UI 개편 (<b>Kotlin · Jetpack Compose</b>)</li>
+          <li>프론트엔드, UI/UX 디자인</li>
+          <li>프론트 초기 구조, Android 실행 환경</li>
+          <li><b>역할별 앱 셸</b> 역할에 따라 바뀌는 메뉴, 그룹 전환</li>
+          <li>가족 피드, 게시글, 댓글, 알림, 그룹 관리, 가입 승인, 마이페이지, 통화 리포트 화면</li>
+          <li><b>공용 컴포넌트</b> 팝업, 뒤로가기, 재시도 버튼</li>
+          <li><b>알림 이미지</b> 프로필 사진 표시, 사진이 없으면 알림 종류 아이콘</li>
+          <li><b>AI 전화 화면</b> Kotlin, Jetpack Compose 4개 화면 UI 개편</li>
         </ul>
       </div>
-      <div class="card" style="margin-top:24px;padding:20px"><h5 style="font-size:17px;margin-bottom:6px">역할 변경 반영</h5>
-        <p style="font-size:15px">관리자가 역할을 바꿔도 상대 앱에는 이전 메뉴가 남았습니다.<br>
-        <b>앱 복귀 · 탭 재선택 시 데이터를 다시 불러오도록</b> 하고 테스트를 추가했습니다.</p></div>
       <div class="foot meta">2026.07.06 – 08.10&emsp;SSAFY 공통 프로젝트</div>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:center">
@@ -914,10 +912,11 @@
       <div class="role">
         <h4>담당 역할</h4>
         <ul class="dot">
-          <li>컨셉 · UI/UX 디자인 · Vue 화면 구현</li>
-          <li>사진 → AI 아바타(Stable Diffusion) 스타일 선택 화면</li>
-          <li><b>아바타 생성 대기 시간에 스와이프 질문</b>을 받아 기다림을 줄인 흐름</li>
-          <li>매칭 · 채팅 · 로딩 화면, <b>공통 스타일(main.css)</b></li>
+          <li>컨셉, UI/UX 디자인, Vue 화면 구현</li>
+          <li><b>AI 아바타</b> 사진 기반 Stable Diffusion 스타일 선택 화면</li>
+          <li><b>스와이프 질문</b> 아바타 생성을 기다리는 동안 답하는 취향 질문 흐름</li>
+          <li>매칭, 채팅, 로딩 화면</li>
+          <li><b>공통 스타일</b> main.css</li>
         </ul>
       </div>
       <div class="foot meta">2026.05.22 – 06.26&emsp;SSAFY 1학기 관통 프로젝트</div>
